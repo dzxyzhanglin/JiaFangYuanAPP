@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/img_mf_head" />
+
+                <!--第一页 开始-->
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:id="@+id/maifang_step_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:animateLayoutChanges="true"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/Fang_Add_View_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="请认真填写以下信息" />
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:text="标题" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="请填写标题" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:text="基本位置" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/et_maifang_weizhi"
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="请选择省市区" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:text="小区名字" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="请填写小区名字" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:text="小区图片" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="点击上传" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="20dp"
+                            android:src="@mipmap/img_fang_add" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#a1fffe" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_maifang_setp_next_2"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/border_circle_button_fang_transparent"
+                        android:gravity="center"
+                        android:text="下一页"
+                        android:textColor="#00b9a4" />
+
+                </android.support.v7.widget.LinearLayoutCompat>
+                <!--第一页 结束-->
+
+                <!-- 第二页 开始 -->
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:id="@+id/maifang_step_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/Fang_Add_View_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="@color/app_bg"
+                        android:paddingLeft="15dp"
+                        android:text="周边环境" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="周边有无农贸市场" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_1"
+                            android:checked="true"
+                            android:gravity="left|center"
+                            android:text="有" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_0"
+                            android:gravity="left|center"
+                            android:text="无" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="周边有无大型超市" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_1"
+                            android:checked="true"
+                            android:gravity="left|center"
+                            android:text="有" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_0"
+                            android:gravity="left|center"
+                            android:text="无" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="是否学区房" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_1"
+                            android:checked="true"
+                            android:gravity="left|center"
+                            android:text="是" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_0"
+                            android:gravity="left|center"
+                            android:text="否" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="周边最近小学" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="请输入小学名称" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="周边最近初中" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="请输入初中名称" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="周边最近高中" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="请输入高中名称" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="周边最近地铁(轻轨)站" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="请输入地铁（轻轨）名称" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="周边最近公交站" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="请输入公交站名称" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="附近医院" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_1"
+                            android:checked="true"
+                            android:gravity="left|center"
+                            android:text="有" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_0"
+                            android:gravity="left|center"
+                            android:text="无" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="附近公园" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_1"
+                            android:checked="true"
+                            android:gravity="left|center"
+                            android:text="有" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_0"
+                            android:gravity="left|center"
+                            android:text="无" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:text="餐饮方便程度" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_1"
+                            android:checked="true"
+                            android:gravity="left|center"
+                            android:text="很" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_0"
+                            android:gravity="left|center"
+                            android:text="一般" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_0"
+                            android:gravity="left|center"
+                            android:text="不" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_maifang_setp_prev_1"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/border_circle_button_fang_transparent"
+                            android:gravity="center"
+                            android:text="上一页"
+                            android:textColor="#00b9a4" />
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_maifang_setp_next_3"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/border_circle_button_fang_transparent"
+                            android:gravity="center"
+                            android:text="下一页"
+                            android:textColor="#00b9a4" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+                </android.support.v7.widget.LinearLayoutCompat>
+                <!-- 第二页 结束 -->
+
+                <!-- 第三页 开始 -->
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:id="@+id/maifang_step_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/Fang_Add_View_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="@color/app_bg"
+                        android:paddingLeft="15dp"
+                        android:text="房产状况" />
+
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:text="建筑面积" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="请填写建筑面积" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="平方米" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:text="户型" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="室" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="厅" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="厨" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="卫" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:text="楼层" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="第" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="请填写" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="层" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="共" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="请填写" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="层" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:text="有无电梯" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_1"
+                            android:checked="true"
+                            android:gravity="left|center"
+                            android:text="有" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_0"
+                            android:gravity="left|center"
+                            android:text="无" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:text="停车方便程度" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_1"
+                            android:checked="true"
+                            android:gravity="left|center"
+                            android:text="很" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_0"
+                            android:gravity="left|center"
+                            android:text="一般" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_0"
+                            android:gravity="left|center"
+                            android:text="不" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:text="装修情况" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_1"
+                            android:checked="true"
+                            android:gravity="left|center"
+                            android:text="精" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_0"
+                            android:gravity="left|center"
+                            android:text="简" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_0"
+                            android:gravity="left|center"
+                            android:text="清水房" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_maifang_setp_prev_2"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/border_circle_button_fang_transparent"
+                            android:gravity="center"
+                            android:text="上一页"
+                            android:textColor="#00b9a4" />
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_maifang_setp_next_4"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/border_circle_button_fang_transparent"
+                            android:gravity="center"
+                            android:text="下一页"
+                            android:textColor="#00b9a4" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+                </android.support.v7.widget.LinearLayoutCompat>
+                <!-- 第三页 结束 -->
+
+                <!-- 第四页 开始 -->
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:id="@+id/maifang_step_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/Fang_Add_View_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="@color/app_bg"
+                        android:paddingLeft="15dp"
+                        android:text="交易方式" />
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="交易方式" />
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_1"
+                            android:checked="true"
+                            android:gravity="left|center"
+                            android:text="委托中介代理" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_0"
+                            android:gravity="left|center"
+                            android:text="双方交易" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/Fang_Add_View_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="@color/app_bg"
+                        android:paddingLeft="15dp"
+                        android:text="付款方式" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="总金额" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="请填写总金额" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="元" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="付款方式" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_1"
+                            android:checked="true"
+                            android:gravity="left|center"
+                            android:text="全款" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@drawable/radio_0"
+                            android:gravity="left|center"
+                            android:text="按揭" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/Fang_Add_View_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="0dp"
+                        android:background="@color/app_bg"
+                        android:paddingLeft="15dp"
+                        android:text="联系方式" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="联系人" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="请填写联系人姓名" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:text="联系电话" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="请填写手机号码" />
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/btn_item_left" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_title"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:gravity="top"
+                            android:paddingTop="10dp"
+                            android:text="看房时间" />
+
+                        <android.support.v7.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/radio_1"
+                                    android:checked="true"
+                                    android:gravity="left|center"
+                                    android:text="周一" />
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/radio_0"
+                                    android:gravity="left|center"
+                                    android:text="周二" />
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/radio_0"
+                                    android:gravity="left|center"
+                                    android:text="周三" />
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/radio_0"
+                                    android:gravity="left|center"
+                                    android:text="周四" />
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/radio_1"
+                                    android:checked="true"
+                                    android:gravity="left|center"
+                                    android:text="周五" />
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/radio_0"
+                                    android:gravity="left|center"
+                                    android:text="周六" />
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/radio_0"
+                                    android:gravity="left|center"
+                                    android:text="周日" />
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/radio_0"
+                                    android:gravity="left|center"
+                                    android:text="随时" />
+                            </android.support.v7.widget.LinearLayoutCompat>
+                        </android.support.v7.widget.LinearLayoutCompat>
+
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+                    <include layout="@layout/line_item" />
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_maifang_setp_prev_3"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/border_circle_button_fang_transparent"
+                            android:gravity="center"
+                            android:text="上一页"
+                            android:textColor="#00b9a4" />
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_maifang_save"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/border_circle_button_fang"
+                            android:gravity="center"
+                            android:text="提交"
+                            android:textColor="@android:color/white" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+                </android.support.v7.widget.LinearLayoutCompat>
+                <!-- 第四页 结束 -->
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <include layout="@layout/toolbar_transparent" />
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.v7.widget.LinearLayoutCompat>

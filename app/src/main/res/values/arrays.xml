@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fangyuan_laiyuan">
+        <item>点击选择</item>
+        <item>个人（业主）</item>
+        <item>房产中介</item>
+    </string-array>
+
+    <string-array name="fangchan_leixing">
+        <item>点击选择</item>
+        <item>普通住宅</item>
+        <item>别墅</item>
+        <item>写字楼</item>
+        <item>门面</item>
+        <item>车位</item>
+        <item>厂房</item>
+    </string-array>
+
+    <string-array name="tingchefangbian">
+        <item>点击选择</item>
+        <item>很</item>
+        <item>一般</item>
+        <item>无</item>
+    </string-array>
+
+    <string-array name="bieshu">
+        <item>点击选择</item>
+        <item>独栋别墅</item>
+        <item>联排别墅</item>
+    </string-array>
+
+    <string-array name="zhuangxiuqingkuang">
+        <item>点击选择</item>
+        <item>精</item>
+        <item>简</item>
+        <item>清水房</item>
+    </string-array>
+
+
+    <string-array name="youorwu">
+        <item>点击选择</item>
+        <item>有</item>
+        <item>无</item>
+    </string-array>
+
+    <string-array name="shiorfou">
+        <item>点击选择</item>
+        <item>是</item>
+        <item>否</item>
+    </string-array>
+
+    <string-array name="canyin">
+        <item>点击选择</item>
+        <item>很</item>
+        <item>一般</item>
+        <item>不</item>
+    </string-array>
+
+    <string-array name="chuzufangshi">
+        <item>点击选择</item>
+        <item>整租</item>
+        <item>合租</item>
+        <item>租单间</item>
+    </string-array>
+
+    <string-array name="shineishishi">
+        <item>点击选择</item>
+        <item>家电家具齐备</item>
+        <item>部分家电家具</item>
+        <item>空房</item>
+    </string-array>
+
+    <string-array name="fukuanfangshi">
+        <item>点击选择</item>
+        <item>月付</item>
+        <item>季付</item>
+        <item>半年付</item>
+        <item>1年付</item>
+    </string-array>
+</resources>

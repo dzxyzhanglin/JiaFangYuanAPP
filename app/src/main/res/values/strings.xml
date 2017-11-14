@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">佳房缘v2</string>
+    <string name="home">首页</string>
+    <string name="maifang">买房</string>
+    <string name="maifang_search">买房筛选</string>
+    <string name="zufang">租房</string>
+    <string name="zufang_search">租房筛选</string>
+    <string name="user">我的</string>
+    <string name="loupan_search">楼盘筛选</string>
+    <string name="fuwu_search">服务筛选</string>
+    <string name="fuwu_create">买卖房服务</string>
+    <string name="filter">确定</string>
+    <string name="demand">我的发布</string>
+    <string name="to_publish">我要发布</string>
+    <string name="to_maifang">我要卖房</string>
+    <string name="to_loupan">楼盘信息</string>
+    <string name="to_zufang">我要出租房源</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="update_password">修改密码</string>
+    <string name="logout">退出登录</string>
+    <string name="confirm_update_password">确认修改</string>
+    <string name="setting">设置</string>
+    <string name="agreement">服务条款</string>
+    <string name="my_maifang">我的卖房</string>
+    <string name="my_loupan">我的楼盘</string>
+    <string name="my_chuzu">我的出租</string>
+    <string name="confirm_filter">确认筛选</string>
+
+    <string name="press_again_exit">再按一次退出</string>
+    <string name="http_error">请求服务器出错</string>
+
+    <string name="update_download_failed">下载失败</string>
+    <string name="update_download_failed_msg">失败</string>
+    <string name="update_download_start">下载开始</string>
+    <string name="update_download_processing">正在下载</string>
+    <string name="update_download_finish">下载完成</string>
+</resources>

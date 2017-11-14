@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 房源来源 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Fang_Search_Title"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="房源来源" />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/fangyuan_laiyuan"></Spinner>
+            </LinearLayout>
+
+            <include layout="@layout/line_item" />
+
+            <!-- 房产类型 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Fang_Search_Title"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="房产类型" />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/fangchan_leixing"></Spinner>
+            </LinearLayout>
+
+            <include layout="@layout/line_item" />
+
+            <!-- 基本位置 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Fang_Search_Title"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="基本位置" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="省" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="市" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="区" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="小区名称：" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/line_item" />
+
+            <!--房产状况-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Fang_Search_Title"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="房产状况" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="建筑面积：" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="平方米~" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="平方米" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="户型：" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="室" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="厅" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="厨" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="卫" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="楼层：" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="层~" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="层" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="有无电梯：" />
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/youorwu" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="停车方便程度：" />
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/tingchefangbian" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="别墅：" />
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/bieshu" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="装修情况：" />
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/zhuangxiuqingkuang" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/line_item" />
+
+            <!--周边环境-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/Fang_Search_Title"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="周边环境" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="周边有无大型超市：" />
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/youorwu" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="周边有无农贸市场：" />
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/youorwu" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="是否学区房：" />
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/shiorfou" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="周边最近的小学：" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="周边最近的中学：" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="周边最近的公交站：" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="周边最近的地铁(轻轨)站：" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="附近医院：" />
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/youorwu" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="附近公园：" />
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/youorwu" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="附近餐饮方便程度：" />
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/canyin" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/line_item" />
+
+            <!--总金额-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Fang_Search_Title"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:text="总金额" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/Fang_Search_Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="left|center"
+                            android:text="总金额：" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="万元~" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:hint="***" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/Fang_Add_View_Hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="万元" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_maifang_search_filter"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border_circle_button_register"
+                android:gravity="center"
+                android:text="@string/confirm_filter"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

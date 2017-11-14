@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_published_type"
+            style="@style/Demand_Operate_Title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="left|center"
+            android:text="我要出租" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_published_update"
+            style="@style/Demand_Operate_Title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="修改" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_published_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/icon_delete" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_published_title"
+        style="@style/Fang_Info_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="加州百合园房屋出租" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/tv_published_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY" />
+
+</android.support.v7.widget.LinearLayoutCompat>

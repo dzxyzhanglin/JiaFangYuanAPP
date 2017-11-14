@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.v4.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/img_index" />
+
+            <!-- 首页图标 开始 -->
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/img_index_maifang"
+                        style="@style/Home_Top_Icon"
+                        android:src="@mipmap/img_index_maifang" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/Home_Top_Icon_Text"
+                        android:text="我要买房" />
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/img_index_mf"
+                        style="@style/Home_Top_Icon"
+                        android:src="@mipmap/img_index_mf" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/Home_Top_Icon_Text"
+                        android:text="我要卖房" />
+                </android.support.v7.widget.LinearLayoutCompat>
+
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/img_index_zufang"
+                        style="@style/Home_Top_Icon"
+                        android:src="@mipmap/img_index_zufang" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/Home_Top_Icon_Text"
+                        android:text="我要租房" />
+                </android.support.v7.widget.LinearLayoutCompat>
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal" >
+
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/img_index_cz"
+                        style="@style/Home_Top_Icon"
+                        android:src="@mipmap/img_index_cz" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/Home_Top_Icon_Text"
+                        android:text="我要出租" />
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/img_index_loupantuijian"
+                        style="@style/Home_Top_Icon"
+                        android:src="@mipmap/img_index_loupantuijian" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/Home_Top_Icon_Text"
+                        android:text="楼盘推荐" />
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:id="@+id/img_index_maimaifuwu"
+                        style="@style/Home_Top_Icon"
+                        android:src="@mipmap/img_index_maimaifuwu" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/Home_Top_Icon_Text"
+                        android:text="买卖服务" />
+                </android.support.v7.widget.LinearLayoutCompat>
+
+            </android.support.v7.widget.LinearLayoutCompat>
+            <!-- 首页图标 结束 -->
+
+            <!--租房
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        android:text="租房"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/img_index_right" />
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:src="@mipmap/img_index_edit" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_index_cu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="center"
+                        android:text="我要出租"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+                </android.support.v7.widget.LinearLayoutCompat>
+            </android.support.v7.widget.LinearLayoutCompat>
+-->
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#c9c9c9" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_index_zufang"
+                android:layout_width="match_parent"
+                android:layout_height="390dp" />-->
+
+            <!--买房
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/white"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        android:text="买房"
+                        android:textColor="#5dc846"
+                        android:textSize="18sp" />
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="10dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@mipmap/img_index_right" />
+                </android.support.v7.widget.LinearLayoutCompat>
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:src="@mipmap/img_index_edit" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_index_mf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:gravity="center"
+                        android:text="我要卖房"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+                </android.support.v7.widget.LinearLayoutCompat>
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#c9c9c9" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_index_maifang"
+                android:layout_width="match_parent"
+                android:layout_height="390dp" />
+                -->
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v7.widget.LinearLayoutCompat>
